@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Test</title>
+        <script charset="utf-8" src="js/cordova.js"></script>
+      	<script>
+    		document.addEventListener("deviceready", onDeviceReady, false);
+    		
+    		function onDeviceReady() {
+    		    console.log("We are ready");
+    			document.addEventListener("online", onOnline, false);
+    			document.addEventListener("offline", onOffline, false);
+    		}
+
+    		function onOnline() {
+				console.log("hey, we're online!");
+			}
+			
+			function onOffline() {
+				console.log("ehem...excuse me");
+			}
+    	</script>
+    </head>
+    <body>
+	</body>
+</html>
